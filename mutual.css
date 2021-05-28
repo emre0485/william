@@ -1,0 +1,19 @@
+html {
+    --black: #000000;
+    --white: #FFFFFF;
+--darkblue: #2273AA;
+--lightblue: #A7C0D8;
+--yellow: #FFC700;
+--pink: #EB3D9C;
+--red: #E7392A;
+
+--letter-spacing: 15%;
+
+--space-xxs: 0.25rem;
+--space-xs: 0.5rem;
+--space-sm: 1rem;
+--space-md: 1.5rem;
+--space-lg: 2rem;
+--space-xl: 3rem;
+--space-xxl: 6rem;
+}
