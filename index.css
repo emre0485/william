@@ -1,17 +1,17 @@
 /* --------------------------------BURGER MENU------------------------------------- */
 /* Styling af navigation */
 /* Bredde-højde-position mm */
-/* Transitions er stjålet, da jeg ellers ikke kunne få den til at virke  */
+/* /* Transitions gør at at den bevæger sig ud mere smooth, end hvis de ikke var på den */
 .nav {
-  /* -webkit-transition: left 0.5s ease;
+  -webkit-transition: left 0.5s ease;
   -moz-transition: left 0.5s ease;
   -ms-transition: left 0.5s ease;
   -o-transition: left 0.5s ease;
-  transition: left 0.5s ease; */
+  transition: left 0.5s ease;
   background: var(--black);
   color: var(--white);
   cursor: pointer;
-  height: 100vh;
+  height: 90vh;
   left: -20rem;
   padding: 10rem 10rem 10rem 10rem;
   position: fixed;
@@ -31,13 +31,21 @@
 .nav ul {
   position: relative;
   top: 50%;
-  /* -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-left: -4vw;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 /* Styling af hamburger menu, når den åbner og lukker */
@@ -100,7 +108,7 @@
 
 .nav-toggle.expanded .nav-toggle-bar::after,
 .nav-toggle.expanded .nav-toggle-bar::before {
-  background: white;
+  background: var(--white);
   margin-top: 0;
 }
 
@@ -116,10 +124,6 @@
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
-
-.nav a {
-  text-decoration: none;
 }
 
 /* --------------------------------LOGO------------------------------------- */
