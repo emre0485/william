@@ -121,3 +121,14 @@
 .nav a {
   text-decoration: none;
 }
+
+/* --------------------------------LOGO------------------------------------- */
+
+header .logo a {
+  font-size: 2rem;
+}
+
+header .logo {
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
