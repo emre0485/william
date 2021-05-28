@@ -128,10 +128,6 @@
 
 /* --------------------------------LOGO------------------------------------- */
 
-header .logo a {
-  font-size: 2rem;
-}
-
 header .logo {
   text-align: right;
   margin-bottom: 0.5rem;
@@ -139,11 +135,13 @@ header .logo {
 
 /* --------------------------------HERO-VIDEO------------------------------------- */
 #videoBG {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: -1;
-  width: 100%;
-  height: auto;
-  opacity: 0.8;
 }
 
 /* Responsiv hero video */
@@ -156,29 +154,9 @@ header .logo {
 }
 /* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
 
-button {
-  border: 2px solid var(--black);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  padding: 20px 30px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0;
-  position: relative;
-  text-decoration: none;
-  margin-left: 28vw;
-  margin-top: 30vw;
-}
-
-button:hover {
-  background-color: var(--black);
-  color: var(--white);
-  text-decoration: none;
-}
-
-.button a {
-  text-decoration: none;
-  color: var(--black);
+.front_img img {
+  text-align: center;
+  margin-left: 44vw;
+  margin-top: 4vw;
+  width: 16vw;
 }
