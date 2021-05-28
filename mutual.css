@@ -1,13 +1,11 @@
 html {
-    --black: #000000;
-    --white: #FFFFFF;
+--black: #000000;
+--white: #FFFFFF;
 --darkblue: #2273AA;
 --lightblue: #A7C0D8;
 --yellow: #FFC700;
 --pink: #EB3D9C;
 --red: #E7392A;
-
---letter-spacing: 15%;
 
 --space-xxs: 0.25rem;
 --space-xs: 0.5rem;
@@ -16,4 +14,42 @@ html {
 --space-lg: 2rem;
 --space-xl: 3rem;
 --space-xxl: 6rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    /* line-height: 1.5; */
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400; 
+    letter-spacing: 15%;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 15%;
+
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
 }
