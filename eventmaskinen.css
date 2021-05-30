@@ -1,3 +1,15 @@
 .section_event h1 {
     color: var(--red);
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: var(--yellow);
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
