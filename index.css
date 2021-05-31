@@ -146,72 +146,6 @@ header .logo {
   padding-bottom: 3vw;
 }
 
-/* Responsiv hero video */
-
-@media (max-aspect-ratio: 16/9) {
-  #videoBG {
-    width: 100%;
-    height: auto;
-  }
-  #second_section .section_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 5vw;
-  }
-
-  #second_section img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-  }
-
-  .tekst_cow {
-    display: block;
-    grid-template-columns: 1fr;
-    color: var(--lightblue);
-  }
-
-  .tekst_foto {
-    color: var(--pink);
-    grid-template-rows: 1fr;
-  }
-
-  .tekst_event {
-    color: var(--red);
-  }
-
-  .tekst_gastro {
-    color: var(--yellow);
-  }
-  .bottom {
-    padding-bottom: 10vw;
-  }
-
-  .button_ned {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 40vw;
-    margin-bottom: 3vw;
-  }
-}
-/* --------------------------------FOOTER------------------------------------- */
-
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border: 0.2vw solid var(--black);
-  color: var(--black);
-  text-align: center;
-  padding: 1vw;
-}
-
-.footer img {
-  padding-bottom: 1px;
-  width: 1.5%;
-  text-align: right;
-}
-
 /* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
 /* hvorfor virker den ikke ved hover?  */
 
@@ -235,46 +169,115 @@ button:hover {
   color: var(--white);
 }
 
-/* --------------------------------Billeder i bunden------------------------------------- */
+/* --------------------------------SECTIONS------------------------------------- */
+/* Second section */
+#second_section .section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5vw;
+}
 
-@media (max-width: 300px) {
-  #second_section .section_wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-top: 5vw;
-  }
+#second_section img:hover {
+  filter: grayscale(100%);
+}
+/* Image og tekst second section  */
+.image1 {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.image1 img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
 
-  #second_section img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-  }
+.image2 {
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
 
-  .tekst_cow {
-    display: block;
+.image2 img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
 
-    color: var(--lightblue);
-  }
+.image3 {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 2/2;
+  padding: 3px;
+}
 
-  .tekst_foto {
-    color: var(--pink);
-  }
+.image3 img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
 
-  .tekst_event {
-    color: var(--red);
-  }
+.tekst_cow h1 {
+  color: var(--lightblue);
+  font-size: 3.5rem;
+}
 
-  .tekst_gastro {
-    color: var(--yellow);
-  }
-  .bottom {
-    padding-bottom: 10vw;
-  }
+.tekst_foto h1 {
+  color: var(--pink);
+  font-size: 3.5rem;
+}
 
-  .button_ned {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 40vw;
-    margin-bottom: 3vw;
+.tekst_event h1 {
+  display: grid;
+  color: var(--red);
+  grid-column: 3/4;
+  grid-row: 2/2;
+  font-size: 3.5rem;
+}
+.tekst_gastro {
+  color: var(--yellow);
+}
+.bottom {
+  padding-bottom: 10vw;
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+/* Third section // KONTAKT KNAP */
+.button_ned {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 40vw;
+  margin-bottom: 3vw;
+}
+
+/* --------------------------------FOOTER------------------------------------- */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 0.2vw solid var(--black);
+  color: var(--black);
+  text-align: center;
+  padding: 1vw;
+}
+
+.footer img {
+  padding-bottom: 1px;
+  max-width: 2%;
+  text-align: right;
+}
+
+/* Mediaquerys  */
+/* Mobile  */
+
+/* 16/9 format */
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
   }
 }
