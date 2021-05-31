@@ -1,23 +1,22 @@
-
 /* --------------------------------LOGO------------------------------------- */
 
 header .logo {
-    text-align: right;
-    margin-bottom: 0.5rem;
-  }
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
 
-  /* --------------------------------TEKST------------------------------------- */
+/* --------------------------------TEKST------------------------------------- */
 
 .section_event h1 {
-    color: var(--red);
+  color: var(--red);
 }
 
 #section_event {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* --------------------------------BILLEDER------------------------------------- */
@@ -27,14 +26,14 @@ header .logo {
     } */
 
 .container {
-    position: relative;
-    text-align: center;
-    color: var(--yellow);
-  }
- 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: relative;
+  text-align: center;
+  color: var(--yellow);
+}
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

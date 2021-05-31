@@ -131,6 +131,7 @@
 header .logo {
   text-align: right;
   margin-bottom: 0.5rem;
+  position: sticky;
 }
 
 /* --------------------------------HERO-VIDEO------------------------------------- */
@@ -140,10 +141,8 @@ header .logo {
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
-  background-position: 30% 10%;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
   z-index: -1;
+  padding-bottom: 3vw;
 }
 
 /* Responsiv hero video */
@@ -156,8 +155,9 @@ header .logo {
 }
 
 /* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
+/* hvorfor virker den ikke ved hover?  */
 
-/* button {
+button {
   border: 0.2vw solid var(--black);
   background-color: transparent;
   background-repeat: no-repeat;
@@ -167,25 +167,19 @@ header .logo {
   font-size: 1vw;
   cursor: pointer;
   margin: 0;
-  position: relative;
   text-decoration: none;
   margin-left: 14vw;
-  color: var(--black);
-}
-
-button a {
-  color: var(--black);
-  text-decoration: none;
+  text-align: center;
 }
 
 button:hover {
   background-color: var(--black);
-  color: white;
-}  */
+  color: var(--white);
+}
 
 /* --------------------------------Billeder i bunden------------------------------------- */
 
-@media (min-width: 1000px) {
+@media (min-width: 300px) {
   #second_section .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -202,22 +196,36 @@ button:hover {
 
   #second_section img {
     width: 100%;
-    justify-content: baseline;
   }
 
-  .centered_cow {
+  .tekst_cow {
+    display: block;
+    grid-template-columns: 1fr;
     color: var(--lightblue);
   }
 
-  .centered_foto {
+  .tekst_foto {
     color: var(--pink);
+    grid-template-rows: 1fr;
   }
 
-  .centered_event {
+  .tekst_event {
     color: var(--red);
   }
 
-  .centered_gastro {
+  .tekst_gastro {
     color: var(--yellow);
+    position: absolute;
+    margin-top: -17vw;
+    margin-left: 5vw;
+  }
+  .bottom {
+    padding-bottom: 10vw;
+  }
+
+  .button_ned {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 40vw;
   }
 }
