@@ -1,5 +1,3 @@
-
-
 /* --------------------------------HERO-VIDEO------------------------------------- */
 #videoBG {
   display: grid;
@@ -9,6 +7,12 @@
   background-size: cover;
   z-index: -1;
   padding-bottom: 3vw;
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
@@ -33,8 +37,8 @@ button:hover {
   background-color: var(--black);
   color: var(--white);
 }
-
 /* --------------------------------SECTIONS------------------------------------- */
+
 /* Second section */
 #second_section .section_wrapper {
   display: grid;
@@ -108,6 +112,10 @@ button:hover {
   grid-column: 1/3;
   grid-row: 2/3;
 }
+.bottom img {
+  width: 100%;
+  height: 100%;
+}
 
 /* Third section // KONTAKT KNAP */
 .button_ned {
@@ -117,16 +125,7 @@ button:hover {
   margin-bottom: 3vw;
 }
 
-
-
 /* Mediaquerys  */
 /* Mobile  */
 
 /* 16/9 format */
-
-@media (max-aspect-ratio: 16/9) {
-  #videoBG {
-    width: 100%;
-    height: auto;
-  }
-}
