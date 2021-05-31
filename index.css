@@ -142,7 +142,13 @@ header .logo {
   top: 0;
   left: 0;
   z-index: -1;
+  /* clip-path: circle(93.0% at 46% 7%); */
+
 }
+
+/* #videoBG {
+    clip-path: circle(93.0% at 46% 7%);
+    } */
 
 /* Responsiv hero video */
 
