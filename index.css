@@ -135,12 +135,14 @@ header .logo {
 
 /* --------------------------------HERO-VIDEO------------------------------------- */
 #videoBG {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+  display: grid;
+  grid-column: 1/4;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: 30% 10%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   z-index: -1;
 }
 
@@ -148,15 +150,74 @@ header .logo {
 
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 }
+
 /* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
 
-.front_img img {
-  text-align: center;
-  margin-left: 44vw;
-  margin-top: 4vw;
-  width: 16vw;
+/* button {
+  border: 0.2vw solid var(--black);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 1vw 4vw;
+  font-size: 1vw;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  margin-left: 14vw;
+  color: var(--black);
+}
+
+button a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: var(--black);
+  color: white;
+}  */
+
+/* --------------------------------Billeder i bunden------------------------------------- */
+
+@media (min-width: 1000px) {
+  #second_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  #second_section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #second_section img {
+    width: 100%;
+    justify-content: baseline;
+  }
+
+  .centered_cow {
+    color: var(--lightblue);
+  }
+
+  .centered_foto {
+    color: var(--pink);
+  }
+
+  .centered_event {
+    color: var(--red);
+  }
+
+  .centered_gastro {
+    color: var(--yellow);
+  }
 }
