@@ -237,8 +237,14 @@ button:hover {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--black);
-  color: white;
+  border: 0.2vw solid var(--black);
+  color: var(--black);
   text-align: center;
   padding: 1vw;
+}
+
+.footer img {
+  padding-bottom: 1px;
+  width: 1.5%;
+  text-align: right;
 }
