@@ -28,7 +28,7 @@ body {
 
 h1 {
   font-family: "Bungee", cursive;
-  font-size: clamp(3rem, 2.407rem + 2.7907vw, 4.5rem);
+  font-size: clamp(2rem, 7vw, 8rem);
   margin-left: 20px;
   margin-right: 20px;
 }
