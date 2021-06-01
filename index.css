@@ -59,7 +59,7 @@ button:hover {
 /* First section */
 #first_section p {
   font-family: "Oswald";
-  text-align: center;
+  justify-content: center;
   font-weight: 200;
   font-size: clamp(1rem, 0.0116rem + 4.6512vw, 3.5rem);
 }
