@@ -7,7 +7,7 @@ header .logo {
 
 /* --------------------------------TEKST------------------------------------- */
 
-.section_event h1 {
+h1 {
   color: var(--red);
 }
 
@@ -54,7 +54,6 @@ header .logo {
 
 .oppositekitchen_h1 {
   color: var(--yellow);
-  place-content: center;
 }
 
 .oppositekitchen > * {
