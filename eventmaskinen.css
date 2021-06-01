@@ -20,11 +20,14 @@ header .logo {
     margin-right: 20px;
 }
 
+.citat {
+    /* ?????? */
+}
 /* --------------------------------BILLEDER------------------------------------- */
 
-/* img {
+img {
     clip-path: circle(93.0% at 46% 7%);
-    } */
+    }
 
 .container {
     position: relative;
