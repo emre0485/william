@@ -1,138 +1,102 @@
-/* --------------------------------BURGER MENU------------------------------------- */
-/* Styling af navigation */
-/* Bredde-højde-position mm */
-/* /* Transitions gør at at den bevæger sig ud mere smooth, end hvis de ikke var på den */
-.nav {
-  -webkit-transition: left 0.5s ease;
-  -moz-transition: left 0.5s ease;
-  -ms-transition: left 0.5s ease;
-  -o-transition: left 0.5s ease;
-  transition: left 0.5s ease;
-  background: var(--black);
-  color: var(--white);
+/* --------------------------------HERO-VIDEO------------------------------------- */
+#videoBG {
+  display: grid;
+  grid-column: 1/4;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  z-index: -1;
+  padding-bottom: 3vw;
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
+/* hvorfor virker den ikke ved hover?  */
+
+button {
+  border: 0.2vw solid var(--black);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 1vw 4vw;
+  font-size: 1vw;
   cursor: pointer;
-  height: 90vh;
-  left: -20rem;
-  padding: 10rem 10rem 10rem 10rem;
-  position: fixed;
-  top: 0;
-  width: 20rem;
-  z-index: 2;
-}
-
-/* Nav udvides  */
-
-.nav.expanded {
-  left: 0;
-}
-
-/* Styling af ul i navigationen  */
-
-.nav ul {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  list-style: none;
   margin: 0;
-  padding: 0;
   text-decoration: none;
-  color: var(--white);
-  font-size: 1.5rem;
-  margin-left: -4vw;
+  margin-left: 14vw;
+  text-align: center;
 }
 
-.nav a {
-  text-decoration: none;
+button:hover {
+  background-color: var(--black);
   color: var(--white);
 }
+/* --------------------------------SECTIONS------------------------------------- */
 
-/* Styling af hamburger menu, når den åbner og lukker */
-.nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  height: 2rem;
-  left: 2rem;
-  position: fixed;
-  top: 2rem;
-  width: 3.6rem;
-  z-index: 3;
+/* Second section */
+#second_section .section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5vw;
 }
 
-/* Navigationens 1 streg i burger menuen */
-
-.nav-toggle .nav-toggle-bar,
-.nav-toggle .nav-toggle-bar::after,
-.nav-toggle .nav-toggle-bar::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background: var(--black);
-  content: "";
-  height: 0.4rem;
-  width: 100%;
+#second_section img:hover {
+  filter: grayscale(100%);
+}
+/* Image og tekst second section  */
+.image1 {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.image1 img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
-.nav-toggle .nav-toggle-bar {
-  margin-top: 0;
+.image2 {
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 2/4;
 }
 
-/* 2 streger i burger menuen - placering  */
-
-.nav-toggle .nav-toggle-bar::after {
-  margin-top: 0.8rem;
+.image2 img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
-/* 3 streg placering  */
-.nav-toggle .nav-toggle-bar::before {
-  margin-top: -0.8rem;
+.image3 {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 2/2;
+  padding: 3px;
 }
 
-/* Stjålet, men det virkede  */
-
-.nav-toggle.expanded .nav-toggle-bar {
-  background: transparent;
+.image3 img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
-/* Krydset inde i navigationen  */
-
-.nav-toggle.expanded .nav-toggle-bar::after,
-.nav-toggle.expanded .nav-toggle-bar::before {
-  background: var(--white);
-  margin-top: 0;
+.tekst_cow h1 {
+  color: var(--lightblue);
+  font-size: 3.5rem;
 }
 
-/* Når der trykkes på burger menuen, roterer den til et kryds (før og efter)  */
-
-.nav-toggle.expanded .nav-toggle-bar::after {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+.tekst_foto h1 {
+  color: var(--pink);
+  font-size: 3.5rem;
 }
 
-.nav-toggle.expanded .nav-toggle-bar::before {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-/* --------------------------------LOGO------------------------------------- */
-
-header .logo {
-  text-align: right;
-  margin-bottom: 0.5rem;
-}
-
+<<<<<<< HEAD
 /* --------------------------------HERO-VIDEO------------------------------------- */
 #videoBG {
   object-fit: cover;
@@ -157,12 +121,38 @@ header .logo {
     width: auto;
     height: 100%;
   }
+=======
+.tekst_event h1 {
+  display: grid;
+  color: var(--red);
+  grid-column: 3/4;
+  grid-row: 2/2;
+  font-size: 3.5rem;
 }
-/* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
+.tekst_gastro {
+  color: var(--yellow);
+}
+.bottom {
+  padding-bottom: 10vw;
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.bottom img {
+  width: 100%;
+  height: 100%;
+>>>>>>> e2fc300eb7bb88a4cdb7e6850390f1e4ac528e3f
+}
 
-.front_img img {
-  text-align: center;
-  margin-left: 44vw;
-  margin-top: 4vw;
-  width: 16vw;
+/* Third section // KONTAKT KNAP */
+.button_ned {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 40vw;
+  margin-bottom: 3vw;
 }
+
+/* Mediaquerys  */
+/* Mobile  */
+
+/* 16/9 format */
