@@ -8,9 +8,12 @@
   z-index: -1;
   padding-bottom: 3vw;
 }
+/* 16/9 format Responsiv video */
+
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     width: 100%;
+    height: 100vh;
     height: auto;
   }
 }
@@ -38,6 +41,13 @@ button:hover {
   color: var(--white);
 }
 /* --------------------------------SECTIONS------------------------------------- */
+/* First section */
+#first_section p {
+  font-size: clamp(1rem, 0.0909rem + 4.5455vw, 3rem);
+
+  text-align: center;
+  font-weight: 200;
+}
 
 /* Second section */
 #second_section .section_wrapper {
@@ -49,7 +59,7 @@ button:hover {
 #second_section img:hover {
   filter: grayscale(100%);
 }
-/* Image og tekst second section  */
+/* Image second section  */
 .image1 {
   display: grid;
   grid-column: 1/2;
@@ -86,16 +96,33 @@ button:hover {
   object-fit: cover;
 }
 
-.tekst_cow h1 {
-  color: var(--lightblue);
-  font-size: 3.5rem;
+.bottom {
+  padding-bottom: 10vw;
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.bottom img {
+  width: 100%;
+  height: 100%;
 }
 
-.tekst_foto h1 {
+/* h1 i second section ovenpå billeder */
+.image1 h1 {
+  color: var(--lightblue);
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.image2 h1 {
+  display: flex;
+  align-items: stretch;
   color: var(--pink);
   font-size: 3.5rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* --------------------------------HERO-VIDEO------------------------------------- */
 #videoBG {
@@ -124,13 +151,16 @@ button:hover {
 =======
 .tekst_event h1 {
   display: grid;
+=======
+.image3 h1 {
+>>>>>>> 7cff937859188726eb7c1c3861771262c9c55430
   color: var(--red);
-  grid-column: 3/4;
-  grid-row: 2/2;
   font-size: 3.5rem;
 }
-.tekst_gastro {
+
+.image4 h1 {
   color: var(--yellow);
+<<<<<<< HEAD
 }
 .bottom {
   padding-bottom: 10vw;
@@ -142,6 +172,9 @@ button:hover {
   width: 100%;
   height: 100%;
 >>>>>>> e2fc300eb7bb88a4cdb7e6850390f1e4ac528e3f
+=======
+  font-size: 3.5rem;
+>>>>>>> 7cff937859188726eb7c1c3861771262c9c55430
 }
 
 /* Third section // KONTAKT KNAP */
@@ -154,5 +187,3 @@ button:hover {
 
 /* Mediaquerys  */
 /* Mobile  */
-
-/* 16/9 format */
