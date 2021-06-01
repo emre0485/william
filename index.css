@@ -1,16 +1,3 @@
-header {
-  display: grid;
-  grid-template-columns: 1fr minmax(0, 1100px) 1fr;
-  grid-template-rows: 1fr auto 1fr;
-  padding: 1rem;
-  height: clamp(200px, 56, 25vw, 70vh);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-blend-mode: multiply;
-}
-header > * {
-  grid-column: 2/0;
-}
 /* --------------------------------HERO-VIDEO------------------------------------- */
 #videoBG {
   display: grid;
@@ -21,8 +8,9 @@ header > * {
   background-size: cover;
   z-index: -1;
   padding-bottom: 3vw;
-  /* filter: grayscale(100%); */
 }
+/* filter: grayscale(100%); */
+
 /* 16/9 format Responsiv video */
 
 @media (max-aspect-ratio: 16/9) {
@@ -33,10 +21,124 @@ header > * {
   }
 }
 
+/* --------------------------------KNAPPER------------------------------------- */
+/* header {
+  min-height: 100vh; 
+  width: 100%; 
+  background-position
+
+}
+
+.knapper {
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+img {
+  height: 400px;
+  width: auto;
+}
+
+img:hover {
+  filter: grayscale(100%);
+}
+.img1 {
+  display: grid;
+  place-items: center;
+}
+.tekst_1 {
+  color: var(--lightblue);
+}
+
+.img1 > * {
+  grid-area: 1/1;
+}
+
+.img2 {
+  display: grid;
+  place-items: center;
+}
+.tekst_2 {
+  color: var(--lightblue);
+}
+
+.img2 > * {
+  grid-area: 1/1;
+}
+
+.img3 {
+  display: grid;
+  place-items: center;
+}
+.tekst_3 {
+  color: var(--lightblue);
+}
+
+.img3 > * {
+  grid-area: 1/1;
+} */
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3;
+  grid-gap: 10px;
+} */
+
+/* .img1 {
+  background-image: url(img/william.jpg);
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+}
+
+.img1 h1 {
+  color: var(--lightblue);
+  font-size: 2.5rem;
+}
+.img2 {
+  background-image: url(img/splashbaer.jpeg);
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+}
+.img2 h1 {
+  color: var(--pink);
+  font-size: 2.5rem;
+}
+.img3 {
+  background-image: url(img/hundhotdog.jpeg);
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+}
+.img3 h1 {
+  color: var(--red);
+  font-size: 2.5rem;
+} */
+/* --------------------------------SECTIONS------------------------------------- */
+/* First section */
+/* #first_section p {
+  font-family: "Oswald";
+  font-weight: 200;
+  font-size: clamp(1rem, 0.0116rem + 4.6512vw, 3.5rem);
+  align-items: center;
+} */
+
+/* Second section */
+/* #second_section .section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5vw;
+} */
+
 /* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
 /* hvorfor virker den ikke ved hover?  */
 
-button {
+/* button {
   border: 0.2vw solid var(--black);
   background-color: transparent;
   background-repeat: no-repeat;
@@ -54,29 +156,24 @@ button {
 button:hover {
   background-color: var(--black);
   color: var(--white);
-}
+} */
 
 /* --------------------------------SECTIONS------------------------------------- */
 /* First section */
-#first_section p {
+/* #first_section p {
   font-family: "Oswald";
   font-weight: 200;
   font-size: clamp(1rem, 0.0116rem + 4.6512vw, 3.5rem);
   object-position: center;
 }
 
-/* Second section */
-#second_section .section_wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-top: 5vw;
-}
-
+ */
+/* 
 #second_section img:hover {
   filter: grayscale(100%);
-}
+}  */
 /* Image second section  */
-.image1 {
+/* .image1 {
   display: grid;
   grid-column: 1/2;
   grid-row: 2/4;
@@ -124,7 +221,7 @@ button:hover {
 }
 
 /* h1 i second section ovenpå billeder */
-.image1 h1 {
+/* .image1 h1 {
   color: var(--lightblue);
   font-size: 3.5rem;
   display: flex;
@@ -150,4 +247,4 @@ button:hover {
   align-items: center;
   color: var(--yellow);
   font-size: 3.5rem;
-}
+}  */

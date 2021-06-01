@@ -204,11 +204,13 @@ a {
 
 /* --------------------------------LOGO------------------------------------- */
 
-/* header .logo {
-  place-content: left;
-  margin-bottom: 0.5rem;
-  display: grid;
-} */
+header .logo {
+  display: flex;
+  padding: 0% 85%;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+}
+
 /* --------------------------------FOOTER------------------------------------- */
 
 .footer {
