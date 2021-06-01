@@ -4,14 +4,15 @@ textarea,
 select,
 button {
   display: block;
-}
+ }
 
 form {
     display: grid;
+    place-content: center;
     gap: 2rem;
   }
   
   .form-felt {
     display: grid;
-    gap: 3px;
+    gap: 1rem;
   }
