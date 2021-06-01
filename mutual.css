@@ -204,12 +204,11 @@ a {
 
 /* --------------------------------LOGO------------------------------------- */
 
-header .logo {
+header .logo img {
   place-content: left;
   margin-bottom: 0.5rem;
   display: grid;
 }
-
 /* --------------------------------FOOTER------------------------------------- */
 
 .footer {
