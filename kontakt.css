@@ -9,10 +9,12 @@ button {
 form {
     display: grid;
     place-content: center;
-    gap: 2rem;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    gap: 1rem;
   }
   
   .form-felt {
     display: grid;
-    gap: 1rem;
+    gap: 0rem;
   }
