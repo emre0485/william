@@ -11,19 +11,6 @@ header .logo {
   color: var(--red);
 }
 
-#section_event {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-/* .citat {
-text-indent: 60px; 
-} */
-
-
 /* --------------------------------BILLEDER------------------------------------- */
 
   img {
@@ -35,11 +22,15 @@ text-indent: 60px;
   filter: grayscale(100%);
     }
  
-    
   img {
     width: 100%;
     cursor: pointer;
     }
+
+    /* HVORDAN BEHOLDER MAN TEKST, NÅR MAN BRUGER HOVER? */
+
+
+    /* --------------------------------BITEMECREW------------------------------------- */
 
 .bitemecrew {
   display: grid;
@@ -54,6 +45,8 @@ text-indent: 60px;
   grid-area: 1/1;
 }
 
+    /* --------------------------------OPPOSITE KITCHEN------------------------------------- */
+
 .oppositekitchen {
   display: grid;
   place-items: center;
@@ -61,41 +54,10 @@ text-indent: 60px;
 
 .oppositekitchen_h1 {
   color: var(--yellow);
+  place-content: center;
 }
 
 .oppositekitchen > * {
   grid-area: 1/1;
 }
-/*     
-#container_bitemecrew {
-  position: relative;
-  text-align: center;
-  color: var(--red);
-}
 
-.centered_bitemecrew {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#container_oppositekitchen {
-  position: relative;
-  text-align: center;
-  color: var(--red);
-}
-
-/* .centered_oppositekitchen {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-.centered_oppositekitchen h1 {
-  display: flex; */
-
-
-
-/* ER DET OK MED POSITION ABSOLUT I DENNE SITUATION? */
