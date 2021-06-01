@@ -1,45 +1,63 @@
-#cowboykokken_section {
-}
 
-.col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 2vh;
-}
+
 
 .col h4 {
-    grid-column-start: 1;
+
     margin-right: 0vw;
   }
 
 h3 {
-  grid-column-start: 1;
+
   margin-right: 0vw;
 }
 
 p {
-  grid-column-start: 1;
+
   margin-right: 0vw;
 }
 
 img {
-    grid-column-start: 1;
+ 
     max-width: 60%;
     max-height: auto;
-    position: relative;
   
   }
 
 
+
 @media (min-width: 600px) {
 
-    img {
+    .col img {
         grid-column-start: 2;
         max-width: 60%;
         max-height: auto;
         position: relative;
         left: 11vw;
+
       
+      }
+
+      .col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2vh;
+        grid-template-rows: auto;
+    
+      }
+      
+      .col h4 {
+          grid-column-start: 1;
+          margin-right: 0vw;
+        }
+      
+      h3 {
+        grid-column-start: 1;
+        margin-right: 0vw;
+      }
+      
+      p {
+        grid-column-start: 1;
+        margin-right: 0vw;
       }
 }
 
