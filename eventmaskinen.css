@@ -26,19 +26,52 @@ text-indent: 60px;
 
 /* --------------------------------BILLEDER------------------------------------- */
 
-/* img {
+img {
     clip-path: circle(93.0% at 46% 7%);
-    } */
+    }
 
-#container {
+  img {
+    max-height: 1100px;
+    width: auto;
+  }
+
+  img:hover {
+  filter: grayscale(100%);
+   max-height: 1100px;
+    width: auto;
+    }
+ 
+    
+    
+#container_bitemecrew {
   position: relative;
   text-align: center;
   color: var(--red);
 }
 
-.centered {
+.centered_bitemecrew {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#container_oppositekitchen {
+  position: relative;
+  text-align: center;
+  color: var(--red);
+}
+
+/* .centered_oppositekitchen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.centered_oppositekitchen h1 {
+  display: flex;
+
+
+
+/* ER DET OK MED POSITION ABSOLUT I DENNE SITUATION? */
