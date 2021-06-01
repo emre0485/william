@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mutual.css" />
+    <link rel="stylesheet" href="kontakt.css">
 
-    <title>Document</title>
+    <title>Kontakt</title>
   </head>
   <body>
     <header>
@@ -27,6 +28,49 @@
         </ul>
       </nav>
     </header>
+
+    <section id="kontakt_section">
+      <h1>KONTAKT</h1>
+      <br />
+      <p>
+        "Hvad end du søger en kok til brylluppet, har fået en gakket idé til et event eller har lyst til en 5-retters menu fra crossaintbåden, så hører jeg gerne fra dig."
+      </p>
+    </section>
+
+    <section id="form_section">
+      <div class="wrapper">
+        <div class="title">
+          Kontakt mig her
+        </div>
+        <form>
+          <div class="form-felt">
+            <label for="navn">Fulde navn:</label>
+            <input placeholder="fx Jens Jensen" type="text" id="navn" name="navn" required>
+          </div>
+    
+          <div class="form-felt">
+            <label for="tel">Telefonnummer:</label>
+            <input placeholder="fx 12 34 56 78" type="tel" id="telefonnummer" name="telefonnummer" required>
+          </div>
+
+        <div class="form-felt">
+          <label for="email">E-mail:</label>
+          <input placeholder="fx jens@gmail.com" type="email" id="email" name="email" required>
+        </div>
+      
+        <div class="form-felt">
+          <label>
+            Besked:
+            <textarea name="besked" rows="5" placeholder="Hejsa William, hvad siger du til at..." type="besked" id="besked" name="besked" required>></textarea>
+          </label>
+        </div>
+
+        <button type="submit">Indsend</button>
+
+        </form>
+      </div>
+    </section>
+
     <div class="footer">
       <p>
         William Milsted
@@ -37,6 +81,8 @@
       <img src="footer_ikon/facebook-1.png" alt="facebook" />
       <img src="footer_ikon/instagram-3.png" alt="instagram-3" />
     </div>
+  
     <script src="mutual.js"></script>
+
   </body>
 </html>
