@@ -13,6 +13,7 @@
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     width: 100%;
+    height: 100vh;
     height: auto;
   }
 }
@@ -40,6 +41,13 @@ button:hover {
   color: var(--white);
 }
 /* --------------------------------SECTIONS------------------------------------- */
+/* First section */
+#first_section p {
+  font-size: clamp(1rem, 0.0909rem + 4.5455vw, 3rem);
+
+  text-align: center;
+  font-weight: 200;
+}
 
 /* Second section */
 #second_section .section_wrapper {
@@ -51,7 +59,7 @@ button:hover {
 #second_section img:hover {
   filter: grayscale(100%);
 }
-/* Image og tekst second section  */
+/* Image second section  */
 .image1 {
   display: grid;
   grid-column: 1/2;
@@ -88,22 +96,6 @@ button:hover {
   object-fit: cover;
 }
 
-.tekst_cow h1 {
-  color: var(--lightblue);
-  font-size: 3.5rem;
-}
-
-.tekst_foto h1 {
-  color: var(--pink);
-  font-size: 3.5rem;
-}
-
-.tekst_event h1 {
-  color: var(--red);
-}
-.tekst_gastro h1 {
-  color: var(--yellow);
-}
 .bottom {
   padding-bottom: 10vw;
   display: grid;
@@ -113,6 +105,31 @@ button:hover {
 .bottom img {
   width: 100%;
   height: 100%;
+}
+
+/* h1 i second section ovenpå billeder */
+.image1 h1 {
+  color: var(--lightblue);
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.image2 h1 {
+  display: flex;
+  align-items: stretch;
+  color: var(--pink);
+  font-size: 3.5rem;
+}
+
+.image3 h1 {
+  color: var(--red);
+  font-size: 3.5rem;
+}
+
+.image4 h1 {
+  color: var(--yellow);
+  font-size: 3.5rem;
 }
 
 /* Third section // KONTAKT KNAP */
