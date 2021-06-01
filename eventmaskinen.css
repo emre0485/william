@@ -26,10 +26,6 @@ text-indent: 60px;
 
 /* --------------------------------BILLEDER------------------------------------- */
 
-img {
-    clip-path: circle(93.0% at 46% 7%);
-    }
-
   img {
     max-height: 1100px;
     width: auto;
@@ -37,12 +33,40 @@ img {
 
   img:hover {
   filter: grayscale(100%);
-   max-height: 1100px;
-    width: auto;
     }
  
     
-    
+  img {
+    width: 100%;
+    cursor: pointer;
+    }
+
+.bitemecrew {
+  display: grid;
+  place-items: center;
+}    
+
+.bitemecrew_h1 {
+  color: var(--red);
+}
+
+.bitemecrew > * {
+  grid-area: 1/1;
+}
+
+.oppositekitchen {
+  display: grid;
+  place-items: center;
+}    
+
+.oppositekitchen_h1 {
+  color: var(--yellow);
+}
+
+.oppositekitchen > * {
+  grid-area: 1/1;
+}
+/*     
 #container_bitemecrew {
   position: relative;
   text-align: center;
@@ -70,7 +94,7 @@ img {
 } */
 
 .centered_oppositekitchen h1 {
-  display: flex;
+  display: flex; */
 
 
 
