@@ -4,6 +4,7 @@ textarea,
 select,
 button {
   display: block;
+  font-family: "Oswald", sans-serif;
  }
 
 form {
