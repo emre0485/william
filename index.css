@@ -8,6 +8,8 @@
   z-index: -1;
   padding-bottom: 3vw;
 }
+/* 16/9 format Responsiv video */
+
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     width: 100%;
@@ -97,13 +99,9 @@ button:hover {
 }
 
 .tekst_event h1 {
-  display: grid;
   color: var(--red);
-  grid-column: 3/4;
-  grid-row: 2/2;
-  font-size: 3.5rem;
 }
-.tekst_gastro {
+.tekst_gastro h1 {
   color: var(--yellow);
 }
 .bottom {
@@ -127,5 +125,3 @@ button:hover {
 
 /* Mediaquerys  */
 /* Mobile  */
-
-/* 16/9 format */
