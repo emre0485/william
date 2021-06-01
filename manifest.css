@@ -1,56 +1,44 @@
---------------------------------LOGO-------------------------------------
-
+/* --------------------------------LOGO------------------------------------- */
+/* 
 header .logo {
     text-align: right;
     margin-bottom: 0.5rem;
-  }
+  } */
   
 /* --------------------------------GRID------------------------------------- */
 
-main {
-        display: grid;
-        grid-template-columns: 1fr minmax(0px, 1200px) 1fr;
-    }
-
     
- /* @media (min-width: 1000px) {
+ @media (min-width: 1000px) {
 
-        .section_wrapper {
+        #manifest_section .section_wrapper {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 20px;
-        } */
+            grid-gap: 5px;
+            margin-right: 1rem;
+        }
 
+    } 
         /* --------------------------------TEKST------------------------------------- */
 
 h1 {
     color: var(--yellow);
       }
     
-  h3 {
-    grid-column-start: 2;
-    margin-right: 0vw;
+h3 {
+    margin-right: 2vw;
   }
   
-  p {
-    grid-column-start: 2;
-    margin-right: 0vw;
+p {
+    margin-right: 2vw;
   }
 
     /* --------------------------------BILLEDE------------------------------------- */
 
   
-  .col img {
-      grid-column-start: 1;
-      max-width: 60%;
-      max-height: auto;
-      position: relative;
-      box-shadow: 24px 24px 0px 0px #ffc700;    
-      left: 11vw;
+  .col_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    box-shadow: 24px 24px 0px 0px #ffc700;    
 
-    }
-  
-  
-  @media (min-width: 600px) {
-
-  
