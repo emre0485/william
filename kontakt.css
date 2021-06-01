@@ -1,0 +1,9 @@
+form {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .form-felt {
+    display: grid;
+    gap: 3px;
+  }
