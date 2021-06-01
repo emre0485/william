@@ -122,6 +122,20 @@ button:hover {
   font-size: 3.5rem;
 }
 
+.image3 h1 {
+  display: flex;
+  align-items: stretch;
+  color: var(--red);
+  font-size: 3.5rem;
+}
+
+.image4 h1 {
+  display: flex;
+  align-items: stretch;
+  color: var(--yellow);
+  font-size: 3.5rem;
+}
+
 <<<<<<< HEAD
 <<<<<<< HEAD
 /* --------------------------------HERO-VIDEO------------------------------------- */
