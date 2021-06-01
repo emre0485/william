@@ -28,7 +28,9 @@ body {
 
 h1 {
   font-family: "Bungee", cursive;
-  font-size: clamp(1rem, 0.0909rem + 4.5455vw, 3.5rem);
+  font-size: clamp(3rem, 2.4070rem + 2.7907vw, 4.5rem);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h2 {
@@ -40,8 +42,8 @@ h3 {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 15%;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 90px;
+  margin-right: 200px;
   margin-bottom: 10;
 }
 
@@ -54,8 +56,8 @@ h4 {
 p {
   font-size: 1.3rem;
   font-weight: 300;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 90px;
+  margin-right: 200px;
   margin-bottom: 10;
 }
 
@@ -64,8 +66,10 @@ a {
 }
 
 .citat {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-right: 200px;
+
 }
 
 
