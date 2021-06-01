@@ -19,16 +19,21 @@ header .logo {
   margin-right: 20px;
 }
 
+/* .citat {
+text-indent: 60px; 
+} */
+
+
 /* --------------------------------BILLEDER------------------------------------- */
 
 /* img {
     clip-path: circle(93.0% at 46% 7%);
     } */
 
-.container {
+#container {
   position: relative;
   text-align: center;
-  color: var(--yellow);
+  color: var(--red);
 }
 
 .centered {
