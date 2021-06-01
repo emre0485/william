@@ -16,10 +16,11 @@ p {
   margin-right: 0vw;
 }
 
-img {
+.col img {
  
-    max-width: 60%;
+    max-width: 70%;
     max-height: auto;
+    box-shadow: 24px 24px 0px 0px #a7c0d8;
   
   }
 
@@ -29,10 +30,11 @@ img {
 
     .col img {
         grid-column-start: 2;
-        max-width: 60%;
+        max-width: 70%;
         max-height: auto;
         position: relative;
         left: 11vw;
+        box-shadow: 24px 24px 0px 0px #a7c0d8;
 
       
       }
