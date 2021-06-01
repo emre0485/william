@@ -29,8 +29,8 @@ body {
 h1 {
   font-family: "Bungee";
   font-size: clamp(3rem, 2.4070rem + 2.7907vw, 4.5rem);
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 h2 {
@@ -42,8 +42,8 @@ h3 {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 15%;
-  margin-left: 90px;
-  margin-right: 200px;
+  margin-left: 7vw;
+  margin-right: 22vw;
   margin-bottom: 10;
 }
 
@@ -51,13 +51,15 @@ h4 {
   font-size: 2rem;
   font-weight: 200;
   letter-spacing: 15%;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 p {
   font-size: 1.3rem;
   font-weight: 300;
-  margin-left: 90px;
-  margin-right: 200px;
+  margin-left: 7vw;
+  margin-right: 22vw;
   margin-bottom: 10;
 }
 
