@@ -19,8 +19,7 @@ html {
 * {
   box-sizing: border-box;
   /*margin-left: 1.5rem;*/
-  margin-right: 1.5rem;
-
+  /* margin-right: 1.5rem; */
 }
 
 body {
@@ -79,8 +78,6 @@ a {
 }
 
 /* --------------------------------MARGIN------------------------------------- */
-
-
 
 /* --------------------------------BURGER MENU------------------------------------- */
 /* Styling af navigation */
