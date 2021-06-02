@@ -45,6 +45,7 @@ form-felt {
   height: auto;
   max-width: 400px;
   box-shadow: 24px 24px 0px 0px var(--darkblue);
+  margin-left: 18vw;
 }
 
 .form_col {
@@ -60,12 +61,11 @@ form-felt {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
-    margin-right: 1rem;
   }
 }
 
 #section_two {
-  margin: 4rem auto;
+  margin: 5rem auto;
 }
 
 /*
