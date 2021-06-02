@@ -21,7 +21,6 @@
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 1.5rem;
 }
-
 /* Styler billederne  */
 
 .gallery_img {
@@ -71,6 +70,26 @@
   grid-column-end: 9;
   grid-row-start: 6;
   grid-row-end: 9;
+}
+
+.image7 {
+  grid-column-start: 1;
+  grid-column-end: -5;
+  grid-row-start: 9;
+  grid-row-end: 9;
+}
+
+.image8 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 9;
+}
+.image9 {
+  grid-column-start: 1;
+  grid-column-end: -5;
+  grid-row-start: 10;
+  grid-row-end: 18;
 }
 
 /* #fotografen_section .section_wrapper {

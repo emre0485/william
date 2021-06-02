@@ -34,7 +34,7 @@ nav img {
 }
 
 .nav_link ul li a {
-  color: black;
+  color: var(--black);
   text-decoration: none;
   font-size: 20px;
 }
@@ -45,7 +45,7 @@ nav img {
   content: "";
   width: 0%;
   height: 0.5vw;
-  background: black;
+  background: var(--black);
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -58,7 +58,7 @@ nav img {
 /* TEKST PÅ FORSIDE */
 .text_box {
   width: 90%;
-  color: black;
+  color: var(--black);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,19 +75,19 @@ nav img {
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   font-size: 14px;
-  color: black;
+  color: var(--black);
   margin: 10px 0 40px;
 }
 
 /* KNAP */
 .hero_knap {
   font-family: "Oswald", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   display: inline-block;
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  font-size: 13px;
+  color: var(--white);
+  border: 3px solid var(--white);
+  font-size: 20px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -95,10 +95,10 @@ nav img {
 }
 
 .hero_knap:hover {
-  border: 1px solid black;
-  background-color: black;
+  border: 1px solid var(--white);
+  background-color: var(--white);
   transition: 1s;
-  color: white;
+  color: var(--black);
 }
 /* IKONER VIL BLIVE FJERNET FRA STØRRE SKÆRME */
 nav .fas {
@@ -118,7 +118,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 
   .nav_link {
     position: fixed;
-    background: white;
+    background: var(--white);
     height: 100vh;
     width: 200px;
     top: 0;
@@ -133,7 +133,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   }
   nav .fas {
     display: block;
-    color: black;
+    color: var(--white);
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
@@ -151,44 +151,56 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 
 .images_col {
   flex-basis: 32%;
-  border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-}
-.images_col img {
-  width: 100%;
 }
 
 /* layer oven på img med tekst og farve  */
 
 .layer {
   background: transparent;
-  height: 100%;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   transition: 0.5s;
 }
 /* Det er en forkert farve, det skal være grayscale ved hover  */
-.layer:hover {
+/* .layer:hover {
   background: rgba(70, 70, 70, 0.753);
-}
-
-h3 {
-  font-family: "Bungee", sans-serif;
-  font-size: 2rem;
-}
+} */
 
 .tekst_1 {
-  color: lightblue;
+  color: var(--lightblue);
+  font-size: 3rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 2vw;
 }
 .tekst_2 {
-  color: palevioletred;
+  color: var(--pink);
+  font-size: 3rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 2vw;
 }
 .tekst_3 {
-  color: red;
+  color: var(--red);
+  font-size: 3rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 5vw;
+}
+
+.tekst_3 {
+  color: var(--red);
+  font-size: 2.2rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 2vw;
+}
+
+.tekst_4 {
+  color: var(--yellow);
+  font-size: 2.5rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 5vw;
 }
 
 #videoBG {
@@ -201,10 +213,26 @@ h3 {
   z-index: -1;
   padding-bottom: 3vw;
 }
+
+@media (min-width: 1000px) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     width: 100%;
     height: 100vh;
     height: auto;
   }
+}
+
+.images_col img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
 }

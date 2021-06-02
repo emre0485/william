@@ -110,7 +110,7 @@ nav img {
 }
 
 .nav_link ul li a {
-  color: black;
+  color: var(--black);
   text-decoration: none;
   font-size: 20px;
 }
@@ -121,7 +121,7 @@ nav img {
   content: "";
   width: 0%;
   height: 0.5vw;
-  background: black;
+  background: var(--black);
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -144,7 +144,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 
   .nav_link {
     position: absolute;
-    background: white;
+    background: var(--white);
     height: 100vh;
     width: 200px;
     top: 0;
@@ -159,7 +159,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   }
   nav .fas {
     display: block;
-    color: black;
+    color: var(--black);
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
@@ -181,4 +181,11 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   padding-bottom: 1px;
   max-width: 2%;
   text-align: right;
+}
+
+/* --------------------------------HOVER PÅ IMG------------------------------------- */
+
+img:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
 }
