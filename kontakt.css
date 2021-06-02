@@ -63,9 +63,13 @@ form-felt {
     margin-right: 1rem;
   }
 }
+
+#section_two {
+  margin: 4rem auto;
+}
+
 /*
 #section_two {
-  margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.5rem;
