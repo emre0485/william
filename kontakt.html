@@ -24,24 +24,26 @@
     <title>Kontakt</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="/"><img src="home_img/logo_gennemsigtigt.png" alt="Logo" /></a>
-      </div>
-      <div class="nav-toggle">
-        <div class="nav-toggle-bar"></div>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="manifest.html">MANIFEST</a></li>
-          <li><a href="cowboykokken.html">COWBOY-KOKKEN</a></li>
-          <li><a href="fotografen.html">FOTOGRAFEN</a></li>
-          <li><a href="eventmaskinen.html">EVENTMASKINEN</a></li>
-          <li><a href="kontakt.html">KONTAKT</a></li>
-        </ul>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="home_img/william_logo.png" alt="logo"
+        /></a>
+        <div class="nav_link" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="manifest.html">MANIFEST</a></li>
+            <li><a href="cowboykokken.html">COWBOYKOK</a></li>
+            <li><a href="fotografen.html">FOTOGRAFEN</a></li>
+            <li><a href="eventmaskinen.html">EVENTMASKINEN</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
-    </header>
+    </section>
+
 
     <section id="section_one">
       <h1>KONTAKT</h1>
@@ -128,6 +130,16 @@
       <img src="footer_ikon/instagram-3.png" alt="instagram-3" />
     </div>
 
-    <script src="mutual.js"></script>
+    <script>
+      let navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
