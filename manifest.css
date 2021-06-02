@@ -37,4 +37,7 @@ p {
   height: auto;
   max-width: 400px;
   box-shadow: 24px 24px 0px 0px #ffc700;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
