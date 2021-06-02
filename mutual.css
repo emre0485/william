@@ -79,142 +79,91 @@ a {
 
 /* --------------------------------MARGIN------------------------------------- */
 
-/* --------------------------------BURGER MENU------------------------------------- */
+/* --------------------------------MENU ------------------------------------- */
 /* Styling af navigation */
-/* Bredde-højde-position mm */
-/* /* Transitions gør at at den bevæger sig ud mere smooth, end hvis de ikke var på den */
-.nav {
-  -webkit-transition: left 0.5s ease;
-  -moz-transition: left 0.5s ease;
-  -ms-transition: left 0.5s ease;
-  -o-transition: left 0.5s ease;
-  transition: left 0.5s ease;
-  background: var(--black);
-  color: var(--white);
-  cursor: pointer;
-  height: 100vh;
-  left: -20rem;
-  padding: 10rem 10rem 10rem 10rem;
-  position: fixed;
-  top: 0;
-  width: 20rem;
-  z-index: 2;
-}
-
-/* Nav udvides  */
-
-.nav.expanded {
-  left: 0;
-}
-
-/* Styling af ul i navigationen  */
-
-.nav ul {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  list-style: none;
+* {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  color: var(--white);
-  font-size: 1.5rem;
-  margin-left: -4vw;
 }
 
-.nav a {
-  text-decoration: none;
-  color: var(--white);
-  z-index: 2;
-}
-
-/* Styling af hamburger menu, når den åbner og lukker */
-.nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  height: 2rem;
-  left: 2rem;
-  position: fixed;
-  top: 2rem;
-  width: 3.6rem;
-  z-index: 3;
-}
-
-/* Navigationens 1 streg i burger menuen */
-
-.nav-toggle .nav-toggle-bar,
-.nav-toggle .nav-toggle-bar::after,
-.nav-toggle .nav-toggle-bar::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background: var(--black);
-  content: "";
-  height: 0.4rem;
-  width: 100%;
-}
-
-.nav-toggle .nav-toggle-bar {
-  margin-top: 0;
-}
-
-/* 2 streger i burger menuen - placering  */
-
-.nav-toggle .nav-toggle-bar::after {
-  margin-top: 0.8rem;
-}
-
-/* 3 streg placering  */
-.nav-toggle .nav-toggle-bar::before {
-  margin-top: -0.8rem;
-}
-
-/* Stjålet, men det virkede  */
-
-.nav-toggle.expanded .nav-toggle-bar {
-  background: transparent;
-}
-
-/* Krydset inde i navigationen  */
-
-.nav-toggle.expanded .nav-toggle-bar::after,
-.nav-toggle.expanded .nav-toggle-bar::before {
-  background: var(--white);
-  margin-top: 0;
-}
-
-/* Når der trykkes på burger menuen, roterer den til et kryds (før og efter)  */
-
-.nav-toggle.expanded .nav-toggle-bar::after {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.nav-toggle.expanded .nav-toggle-bar::before {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-/* --------------------------------LOGO------------------------------------- */
-
-header .logo {
+/* style af navigation */
+nav {
   display: flex;
-  padding: 0% 85%;
+  padding: 2% 6%;
   justify-content: space-between;
   font-family: "Oswald", sans-serif;
+}
+
+nav img {
+  width: 100px;
+}
+
+.nav_link {
+  flex: 1;
+  text-align: right;
+}
+.nav_link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav_link ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Streg under tekst i navigation ved hover  */
+
+.nav_link ul li::after {
+  content: "";
+  width: 0%;
+  height: 0.5vw;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav_link ul li:hover::after {
+  width: 100%;
+}
+/* IKONER VIL BLIVE FJERNET FRA STØRRE SKÆRME */
+nav .fas {
+  display: none;
+}
+
+/* RESPONSIV 
+FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKONER I STYLE SHEET HTML  */
+@media (max-width: 700px) {
+  .nav_link ul li {
+    display: block;
+  }
+
+  .nav_link {
+    position: absolute;
+    background: white;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .nav-link ul {
+    padding: 30px;
+  }
+  nav .fas {
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
 }
 
 /* --------------------------------FOOTER------------------------------------- */
@@ -223,10 +172,9 @@ header .logo {
   left: 0;
   bottom: 0;
   width: 100%;
-  border: 0.2vw solid var(--black);
-  color: var(--black);
   text-align: center;
-  padding: 1vw;
+  padding-top: 10vw;
+  padding-bottom: 3vw;
 }
 
 .footer img {
