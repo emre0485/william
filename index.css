@@ -151,44 +151,56 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 
 .images_col {
   flex-basis: 32%;
-  border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-}
-.images_col img {
-  width: 100%;
 }
 
 /* layer oven på img med tekst og farve  */
 
 .layer {
   background: transparent;
-  height: 100%;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   transition: 0.5s;
 }
 /* Det er en forkert farve, det skal være grayscale ved hover  */
-.layer:hover {
+/* .layer:hover {
   background: rgba(70, 70, 70, 0.753);
-}
-
-h3 {
-  font-family: "Bungee", sans-serif;
-  font-size: 2rem;
-}
+} */
 
 .tekst_1 {
-  color: lightblue;
+  color: var(--lightblue);
+  font-size: 3rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 2vw;
 }
 .tekst_2 {
-  color: palevioletred;
+  color: var(--pink);
+  font-size: 3rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 2vw;
 }
 .tekst_3 {
-  color: red;
+  color: var(--red);
+  font-size: 3rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 5vw;
+}
+
+.tekst_3 {
+  color: var(--red);
+  font-size: 3rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 2vw;
+}
+
+.tekst_4 {
+  color: var(--yellow);
+  font-size: 2.5rem;
+  font-family: "Bungee", sans-serif;
+  margin-left: 5vw;
 }
 
 #videoBG {
@@ -201,10 +213,25 @@ h3 {
   z-index: -1;
   padding-bottom: 3vw;
 }
+
+@media (min-width: 1000px) {
+  #home_section .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     width: 100%;
     height: 100vh;
     height: auto;
   }
+}
+
+.images_col img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
 }
