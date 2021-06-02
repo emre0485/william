@@ -1,0 +1,44 @@
+/* --------------------------------LOGO------------------------------------- */
+/* 
+header .logo {
+    text-align: right;
+    margin-bottom: 0.5rem;
+  } */
+  
+/* --------------------------------GRID------------------------------------- */
+
+    
+ @media (min-width: 1000px) {
+
+        #manifest_section .section_wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 5px;
+            margin-right: 1rem;
+        }
+
+    } 
+        /* --------------------------------TEKST------------------------------------- */
+
+h1 {
+    color: var(--yellow);
+      }
+    
+h3 {
+    margin-right: 2vw;
+  }
+  
+p {
+    margin-right: 2vw;
+  }
+
+    /* --------------------------------BILLEDE------------------------------------- */
+
+  
+  .col_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    box-shadow: 24px 24px 0px 0px #ffc700;    
+
