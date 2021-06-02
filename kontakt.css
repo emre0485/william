@@ -1,3 +1,5 @@
+/*****FORM*****/
+
 label,
 input,
 textarea,
@@ -21,20 +23,34 @@ form-felt {
 
 .title {
   font-family: "Oswald", sans-serif;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   font-weight: 700;
   display: grid;
   place-content: center;
   margin-bottom: 2vw;
 }
 
-#kontakt_section h1 {
+/*****OVERSKRIFT*****/
+
+#section_one h1 {
   color: var(--darkblue);
 }
 
-#form_section {
-  padding: 2%;
-  margin: 8%;
-  border: 2px solid black;
-  max-width: 30vw;
+/*****GRID*****/
+
+.img_col img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  box-shadow: 24px 24px 0px 0px var(--darkblue);
+}
+
+@media (min-width: 1000px) {
+  #section_two .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5px;
+    margin-right: 1rem;
+  }
 }
