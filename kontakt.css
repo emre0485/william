@@ -46,3 +46,10 @@ form-felt {
     gap: 25px;
   }
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
