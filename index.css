@@ -236,3 +236,8 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   height: auto;
   max-width: 400px;
 }
+
+img:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
