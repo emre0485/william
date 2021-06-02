@@ -172,10 +172,9 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   left: 0;
   bottom: 0;
   width: 100%;
-  border: 0.2vw solid var(--black);
-  color: var(--black);
   text-align: center;
-  padding: 1vw;
+  padding-top: 10vw;
+  padding-bottom: 3vw;
 }
 
 .footer img {
