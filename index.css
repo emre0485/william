@@ -1,4 +1,196 @@
-/* --------------------------------HERO-VIDEO------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* style af navigation */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+}
+
+nav img {
+  width: 100px;
+}
+
+.nav_link {
+  flex: 1;
+  text-align: right;
+}
+.nav_link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav_link ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Streg under tekst i navigation ved hover  */
+
+.nav_link ul li::after {
+  content: "";
+  width: 0%;
+  height: 0.5vw;
+  background: black;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav_link ul li:hover::after {
+  width: 100%;
+}
+
+/* TEKST PÅ FORSIDE */
+.text_box {
+  width: 90%;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text_box h1 {
+  font-family: "Bungee", sans-serif;
+  font-size: 62px;
+}
+
+.text_box p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: black;
+  margin: 10px 0 40px;
+}
+
+/* KNAP */
+.hero_knap {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 5vw;
+}
+
+.hero_knap:hover {
+  border: 1px solid black;
+  background-color: black;
+  transition: 1s;
+  color: white;
+}
+/* IKONER VIL BLIVE FJERNET FRA STØRRE SKÆRME */
+nav .fas {
+  display: none;
+}
+
+/* RESPONSIV 
+FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKONER I STYLE SHEET HTML  */
+
+@media (max-width: 700px) {
+  .text_box h1 {
+    font-size: 20px;
+  }
+  .nav_link ul li {
+    display: block;
+  }
+
+  .nav_link {
+    position: absolute;
+    background: white;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .nav-link ul {
+    padding: 30px;
+  }
+  nav .fas {
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+/* BILLED SEKTION */
+
+.home_section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.images_col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.images_col img {
+  width: 100%;
+}
+
+/* layer oven på img med tekst og farve  */
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+/* Det er en forkert farve, det skal være grayscale ved hover  */
+.layer:hover {
+  background: rgba(70, 70, 70, 0.753);
+}
+
+h3 {
+  font-family: "Bungee", sans-serif;
+  font-size: 2rem;
+}
+
+.tekst_1 {
+  color: lightblue;
+}
+.tekst_2 {
+  color: palevioletred;
+}
+.tekst_3 {
+  color: red;
+}
+
 #videoBG {
   display: grid;
   grid-column: 1/4;
@@ -9,10 +201,6 @@
   z-index: -1;
   padding-bottom: 3vw;
 }
-/* filter: grayscale(100%); */
-
-/* 16/9 format Responsiv video */
-
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     width: 100%;
@@ -20,231 +208,3 @@
     height: auto;
   }
 }
-
-/* --------------------------------KNAPPER------------------------------------- */
-/* header {
-  min-height: 100vh; 
-  width: 100%; 
-  background-position
-
-}
-
-.knapper {
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-} 
-
-img {
-  height: 400px;
-  width: auto;
-}
-
-img:hover {
-  filter: grayscale(100%);
-}
-.img1 {
-  display: grid;
-  place-items: center;
-}
-.tekst_1 {
-  color: var(--lightblue);
-}
-
-.img1 > * {
-  grid-area: 1/1;
-}
-
-.img2 {
-  display: grid;
-  place-items: center;
-}
-.tekst_2 {
-  color: var(--lightblue);
-}
-
-.img2 > * {
-  grid-area: 1/1;
-}
-
-.img3 {
-  display: grid;
-  place-items: center;
-}
-.tekst_3 {
-  color: var(--lightblue);
-}
-
-.img3 > * {
-  grid-area: 1/1;
-} */
-
-/* .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 3;
-  grid-gap: 10px;
-} */
-
-/* .img1 {
-  background-image: url(img/william.jpg);
-  width: 30vw;
-  height: 30vw;
-  object-fit: cover;
-}
-
-.img1 h1 {
-  color: var(--lightblue);
-  font-size: 2.5rem;
-}
-.img2 {
-  background-image: url(img/splashbaer.jpeg);
-  width: 30vw;
-  height: 30vw;
-  object-fit: cover;
-}
-.img2 h1 {
-  color: var(--pink);
-  font-size: 2.5rem;
-}
-.img3 {
-  background-image: url(img/hundhotdog.jpeg);
-  width: 30vw;
-  height: 30vw;
-  object-fit: cover;
-}
-.img3 h1 {
-  color: var(--red);
-  font-size: 2.5rem;
-} */
-/* --------------------------------SECTIONS------------------------------------- */
-/* First section */
-/* #first_section p {
-  font-family: "Oswald";
-  font-weight: 200;
-  font-size: clamp(1rem, 0.0116rem + 4.6512vw, 3.5rem);
-  align-items: center;
-} */
-
-/* Second section */
-/* #second_section .section_wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-top: 5vw;
-} */
-
-/* --------------------------------CALL TO ACTIONS KNAPPER------------------------------------- */
-/* hvorfor virker den ikke ved hover?  */
-
-/* button {
-  border: 0.2vw solid var(--black);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  padding: 1vw 4vw;
-  font-size: 1.5rem;
-  position: relative;
-  place-content: center;
-  cursor: pointer;
-  margin: 0;
-  text-decoration: none;
-}
-
-button:hover {
-  background-color: var(--black);
-  color: var(--white);
-} */
-
-/* --------------------------------SECTIONS------------------------------------- */
-/* First section */
-/* #first_section p {
-  font-family: "Oswald";
-  font-weight: 200;
-  font-size: clamp(1rem, 0.0116rem + 4.6512vw, 3.5rem);
-  object-position: center;
-}
-
- */
-/* 
-#second_section img:hover {
-  filter: grayscale(100%);
-}  */
-/* Image second section  */
-/* .image1 {
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 2/4;
-}
-.image1 img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-}
-
-.image2 {
-  display: grid;
-  grid-column: 2/4;
-  grid-row: 2/4;
-}
-
-.image2 img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-}
-
-.image3 {
-  display: grid;
-  grid-column: 3/4;
-  grid-row: 2/2;
-  padding: 3px;
-}
-
-.image3 img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-}
-
-.bottom {
-  padding-bottom: 10vw;
-  display: grid;
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
-.bottom img {
-  width: 100%;
-  height: 100%;
-}
-
-/* h1 i second section ovenpå billeder */
-/* .image1 h1 {
-  color: var(--lightblue);
-  font-size: 3.5rem;
-  display: flex;
-  align-items: center;
-}
-
-.image2 h1 {
-  display: flex;
-  align-items: center;
-  color: var(--pink);
-  font-size: 3.5rem;
-}
-
-.image3 h1 {
-  display: flex;
-  align-items: center;
-  color: var(--red);
-  font-size: 3.5rem;
-}
-
-.image4 h1 {
-  position: relative;
-  align-items: center;
-  color: var(--yellow);
-  font-size: 3.5rem;
-}  */
