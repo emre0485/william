@@ -28,6 +28,7 @@ form-felt {
   display: grid;
   place-content: center;
   margin-bottom: 1vw;
+  color: var(--darkblue);
 }
 
 /*****OVERSKRIFT*****/
@@ -36,7 +37,7 @@ form-felt {
   color: var(--darkblue);
 }
 
-/*****GRID*****/
+/*****COL STYLING*****/
 
 .img_col img {
   display: block;
@@ -47,10 +48,12 @@ form-felt {
 }
 
 .form_col {
-  border: 2px solid black;
+  border: 10px solid var(--darkblue);
   max-width: 400px;
   padding: 4%;
 }
+
+/*****GRID*****/
 
 @media (min-width: 1000px) {
   #section_two .section_wrapper {
@@ -60,3 +63,23 @@ form-felt {
     margin-right: 1rem;
   }
 }
+
+#section_two {
+  margin: 4rem auto;
+}
+
+/*
+#section_two {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+#section_two .img_col {
+  grid-column: 2/3;
+}
+
+#section_two .form_col {
+  grid-column: 3/4;
+}
+*/
