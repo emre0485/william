@@ -174,13 +174,13 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   color: var(--lightblue);
   font-size: 3rem;
   font-family: "Bungee", sans-serif;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 .tekst_2 {
   color: var(--pink);
   font-size: 3rem;
   font-family: "Bungee", sans-serif;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 .tekst_3 {
   color: var(--red);
@@ -193,7 +193,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   color: var(--red);
   font-size: 2.2rem;
   font-family: "Bungee", sans-serif;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 
 .tekst_4 {
@@ -219,7 +219,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px;
   }
 }
 @media (max-aspect-ratio: 16/9) {
