@@ -16,28 +16,34 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/284ee0663e.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Eventmaskinen</title>
   </head>
 
   <body>
-    <header>
-      <!-- <div class="logo">
-        <a href="/"><img src="home_img/logo_gennemsigtigt.png" alt="Logo" /></a>
-      </div> -->
-      <div class="nav-toggle">
-        <div class="nav-toggle-bar"></div>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="manifest.html">MANIFEST</a></li>
-          <li><a href="cowboykokken.html">COWBOY-KOKKEN</a></li>
-          <li><a href="fotografen.html">FOTOGRAFEN</a></li>
-          <li><a href="eventmaskinen.html">EVENTMASKINEN</a></li>
-          <li><a href="kontakt.html">KONTAKT</a></li>
-        </ul>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="home_img/william_logo.png" alt="logo"
+        /></a>
+        <div class="nav_link" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="manifest.html">MANIFEST</a></li>
+            <li><a href="cowboykokken.html">COWBOYKOK</a></li>
+            <li><a href="fotografen.html">FOTOGRAFEN</a></li>
+            <li><a href="eventmaskinen.html">EVENTMASKINEN</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
-    </header>
+    </section>
     <main>
       <section id="event_id">
         <div class="section_event">
@@ -109,7 +115,20 @@
         </div>
       </section>
     </main>
-    <script src="mutual.js"></script>
+    <!-- Java script for burgermenu i responsiv lavet i HTML, fordi andet
+    ikke virkede. https://www.youtube.com/watch?v=oYRda7UtuhA  -->
+
+    <script>
+      let navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 
   <footer>
