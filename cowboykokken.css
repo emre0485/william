@@ -1,70 +1,100 @@
-
-
-
 .col h4 {
-
-    margin-right: 0vw;
-  }
+  margin-right: 0vw;
+}
 
 h3 {
-
   margin-right: 0vw;
 }
 
 p {
-
   margin-right: 0vw;
 }
 
 .col img {
- 
-    max-width: 70%;
-    max-height: auto;
-    box-shadow: 24px 24px 0px 0px #a7c0d8;
-  
-  }
+  max-width: 70%;
+  max-height: auto;
+  box-shadow: 24px 24px 0px 0px #a7c0d8;
+  right: -13vw;
+  position: relative;
+}
+
+#video_container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 8vw;
 
 
+}
 
-@media (min-width: 600px) {
+video {
 
-    .col img {
-        grid-column-start: 2;
-        max-width: 70%;
-        max-height: auto;
-        position: relative;
-        left: 11vw;
-        box-shadow: 24px 24px 0px 0px #a7c0d8;
+  grid-column: 1/ span 4;
+  width: 100%;
+  height: auto;
+  box-shadow: 24px 24px 0px 0px #a7c0d8;
 
-      
-      }
 
-      .col {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 2vh;
-        grid-template-rows: auto;
-    
-      }
-      
-      .col h4 {
-          grid-column-start: 1;
-          margin-right: 0vw;
-        }
-      
-      h3 {
-        grid-column-start: 1;
-        margin-right: 0vw;
-      }
-      
-      p {
-        grid-column-start: 1;
-        margin-right: 0vw;
-      }
 }
 
 
 
+
+
+@media (min-width: 600px) {
+  .col img {
+    grid-column-start: 2;
+    max-width: 70%;
+    max-height: auto;
+    position: relative;
+    left: 11vw;
+    box-shadow: 24px 24px 0px 0px #a7c0d8;
+  }
+
+  .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2vh;
+    grid-template-rows: auto;
+  }
+
+  .col h4 {
+    grid-column-start: 1;
+    margin-right: 0vw;
+  }
+
+  h3 {
+    grid-column-start: 1;
+    margin-right: 0vw;
+  }
+
+  p {
+    grid-column-start: 1;
+    margin-right: 0vw;
+  }
+
+  video {
+
+    grid-column: 2/ span 2;
+    width: 100%;
+    height: auto;
+    box-shadow: 24px 24px 0px 0px #a7c0d8;
+  
+  
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-left: 2vw;
+    margin-right: 38vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+
+}
 
 h1 {
   color: #a7c0d8;

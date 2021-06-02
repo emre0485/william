@@ -27,7 +27,7 @@ form-felt {
   font-weight: 700;
   display: grid;
   place-content: center;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 /*****OVERSKRIFT*****/
@@ -46,10 +46,16 @@ form-felt {
   box-shadow: 24px 24px 0px 0px var(--darkblue);
 }
 
+.form_col {
+  border: 2px solid black;
+  max-width: 400px;
+  padding: 4%;
+}
+
 @media (min-width: 1000px) {
   #section_two .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
     margin-right: 1rem;
   }
