@@ -34,7 +34,7 @@ nav img {
 }
 
 .nav_link ul li a {
-  color: black;
+  color: var(--black);
   text-decoration: none;
   font-size: 20px;
 }
@@ -45,7 +45,7 @@ nav img {
   content: "";
   width: 0%;
   height: 0.5vw;
-  background: black;
+  background: var(--black);
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -58,7 +58,7 @@ nav img {
 /* TEKST PÅ FORSIDE */
 .text_box {
   width: 90%;
-  color: black;
+  color: var(--black);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,19 +75,19 @@ nav img {
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   font-size: 14px;
-  color: black;
+  color: var(--black);
   margin: 10px 0 40px;
 }
 
 /* KNAP */
 .hero_knap {
   font-family: "Oswald", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   display: inline-block;
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  font-size: 13px;
+  color: var(--white);
+  border: 3px solid var(--white);
+  font-size: 20px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -95,10 +95,10 @@ nav img {
 }
 
 .hero_knap:hover {
-  border: 1px solid black;
-  background-color: black;
+  border: 1px solid var(--white);
+  background-color: var(--white);
   transition: 1s;
-  color: white;
+  color: var(--black);
 }
 /* IKONER VIL BLIVE FJERNET FRA STØRRE SKÆRME */
 nav .fas {
@@ -118,7 +118,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 
   .nav_link {
     position: fixed;
-    background: white;
+    background: var(--white);
     height: 100vh;
     width: 200px;
     top: 0;
@@ -133,7 +133,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   }
   nav .fas {
     display: block;
-    color: black;
+    color: var(--white);
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
