@@ -28,13 +28,21 @@ form-felt {
   margin-bottom: 2vw;
 }
 
-#kontakt_section h1 {
+#section_one h1 {
   color: var(--darkblue);
 }
 
-#form_section {
+#form_wrapper {
   padding: 2%;
   margin: 8%;
   border: 2px solid black;
   max-width: 30vw;
+}
+
+@media (min-width: 700px) {
+  #section_two .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
 }
