@@ -46,6 +46,12 @@ form-felt {
   box-shadow: 24px 24px 0px 0px var(--darkblue);
 }
 
+.form_col {
+  border: 2px solid red;
+  max-width: 400px;
+  padding: 4%;
+}
+
 @media (min-width: 1000px) {
   #section_two .section_wrapper {
     display: grid;
