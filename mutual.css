@@ -187,4 +187,5 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 
 img:hover {
   filter: grayscale(100%);
+  cursor: pointer;
 }
