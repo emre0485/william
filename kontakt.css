@@ -27,7 +27,8 @@ form-felt {
   font-weight: 700;
   display: grid;
   place-content: center;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
+  color: var(--darkblue);
 }
 
 /*****OVERSKRIFT*****/
@@ -36,7 +37,7 @@ form-felt {
   color: var(--darkblue);
 }
 
-/*****GRID*****/
+/*****COL STYLING*****/
 
 .img_col img {
   display: block;
@@ -46,11 +47,38 @@ form-felt {
   box-shadow: 24px 24px 0px 0px var(--darkblue);
 }
 
+.form_col {
+  border: 10px solid var(--darkblue);
+  max-width: 400px;
+  padding: 4%;
+}
+
+/*****GRID*****/
+
 @media (min-width: 1000px) {
   #section_two .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
-    margin-right: 1rem;
   }
 }
+
+#section_two {
+  margin: 5rem auto;
+}
+
+/*
+#section_two {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+#section_two .img_col {
+  grid-column: 2/3;
+}
+
+#section_two .form_col {
+  grid-column: 3/4;
+}
+*/
