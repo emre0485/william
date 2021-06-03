@@ -71,14 +71,6 @@ nav img {
   font-size: 62px;
 }
 
-.text_box p {
-  font-family: "Oswald", sans-serif;
-  font-weight: 200;
-  font-size: 14px;
-  color: var(--black);
-  margin: 10px 0 40px;
-}
-
 /* KNAP */
 .hero_knap {
   font-family: "Oswald", sans-serif;
@@ -109,6 +101,11 @@ nav .fas {
 FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKONER I STYLE SHEET HTML  */
 
 @media (max-width: 700px) {
+  .text_box {
+    top: 50%;
+    left: 50%;
+  }
+
   .text_box h1 {
     font-size: 20px;
   }
