@@ -1,0 +1,20 @@
+.tak_knap {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  border: 3px solid var(--white);
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 5vw;
+}
+
+.tak_knap:hover {
+  border: 1px solid var(--black);
+  background-color: var(--black);
+  transition: 1s;
+  color: var(--black);
+}
