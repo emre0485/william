@@ -63,21 +63,30 @@ form-felt {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .img_col img {
-    margin-left: 17vw;
+    margin-left: 12rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .img_col img {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
   .img_col img {
     margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .form_col {
     margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
