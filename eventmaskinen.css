@@ -13,29 +13,30 @@ h1 {
 
 /* --------------------------------BILLEDER------------------------------------- */
 
-  img {
-    max-height: 1100px;
-    width: auto;
-  }
+img {
+  max-height: 1100px;
+  width: auto;
+}
 
-  img:hover {
+img:hover {
   filter: grayscale(100%);
-    }
- 
-  img {
-    width: 100%;
-    cursor: pointer;
-    }
+}
 
-    /* HVORDAN BEHOLDER MAN TEKST, NÅR MAN BRUGER HOVER? */
+img {
+  width: 100%;
+  cursor: pointer;
+}
 
+/* HVORDAN BEHOLDER MAN TEKST, NÅR MAN BRUGER HOVER? */
 
-    /* --------------------------------BITEMECREW------------------------------------- */
+/* --------------------------------BITEMECREW------------------------------------- */
 
 .bitemecrew {
   display: grid;
   place-items: center;
-}    
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
 
 .bitemecrew_h1 {
   color: var(--red);
@@ -45,12 +46,14 @@ h1 {
   grid-area: 1/1;
 }
 
-    /* --------------------------------OPPOSITE KITCHEN------------------------------------- */
+/* --------------------------------OPPOSITE KITCHEN------------------------------------- */
 
 .oppositekitchen {
   display: grid;
   place-items: center;
-}    
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
 
 .oppositekitchen_h1 {
   color: var(--yellow);
@@ -59,4 +62,3 @@ h1 {
 .oppositekitchen > * {
   grid-area: 1/1;
 }
-
