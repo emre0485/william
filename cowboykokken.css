@@ -16,6 +16,7 @@ p {
   box-shadow: 24px 24px 0px 0px #a7c0d8;
   right: -13vw;
   position: relative;
+  margin-bottom: 10vw;
 }
 
 #video_container {
@@ -49,6 +50,7 @@ video {
     position: relative;
     left: 11vw;
     box-shadow: 24px 24px 0px 0px #a7c0d8;
+    
   }
 
   .col {
