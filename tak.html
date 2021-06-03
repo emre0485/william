@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/284ee0663e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="mutual.css" />
+    <link rel="stylesheet" href="tak.css" />
+    <title>Tak!</title>
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="home_img/william_logo.png" alt="logo"
+        /></a>
+        <div class="nav_link" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="manifest.html">MANIFEST</a></li>
+            <li><a href="cowboykokken.html">COWBOYKOK</a></li>
+            <li><a href="fotografen.html">GALLERI</a></li>
+            <li><a href="eventmaskinen.html">EVENTMASKINEN</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <section id="section_one">
+      <h1>TAK!</h1>
+      <br />
+      <h4>Jeg har modtaget din besked, du hører fra mig hurtigst muligt.</h4>
+    </section>
+
+    <section id="section_two">
+      <a href="index.html" class="tak_knap">TILBAGE TIL FORSIDEN</a>
+    </section>
+
+    <div class="footer">
+      <img src="footer_ikon/email.png" alt="email" />
+      <img src="footer_ikon/facebook-1.png" alt="facebook" />
+      <img src="footer_ikon/instagram-3.png" alt="instagram-3" />
+    </div>
+
+    <script>
+      let navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

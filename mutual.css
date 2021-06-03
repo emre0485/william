@@ -72,9 +72,8 @@ a {
 }
 
 .citat {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-right: 200px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 /* --------------------------------MARGIN------------------------------------- */
@@ -143,7 +142,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   }
 
   .nav_link {
-    position: absolute;
+    position: fixed;
     background: var(--white);
     height: 100vh;
     width: 200px;
@@ -181,6 +180,24 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   padding-bottom: 1px;
   max-width: 2%;
   text-align: right;
+}
+
+
+@media (max-width: 700px) {
+
+
+  .footer img {
+    padding-bottom: 1px;
+    max-width: 8%;
+    text-align: right;
+  }
+
+
+nav img {
+  padding-top: 12px;
+  width: 10vw;
+}
+
 }
 
 /* --------------------------------HOVER PÅ IMG------------------------------------- */
