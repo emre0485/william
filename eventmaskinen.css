@@ -62,3 +62,18 @@ img {
 .oppositekitchen > * {
   grid-area: 1/1;
 }
+
+/* --------------------------------VIDEO------------------------------------- */
+
+#video_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 8vw;
+}
+
+video {
+  grid-column: 1 / span 4;
+  width: 100%;
+  height: auto;
+  box-shadow: 24px 24px 0px 0px var(--red);
+}

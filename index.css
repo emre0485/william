@@ -102,7 +102,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 
 @media (max-width: 700px) {
   .text_box {
-    top: 50%;
+    top: 28%;
     left: 50%;
   }
 
@@ -171,33 +171,31 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   color: var(--lightblue);
   font-size: 3rem;
   font-family: "Bungee", sans-serif;
-  margin-left: 1vw;
+  margin-left: 2vw;
+  margin-top: 12vw;
 }
 .tekst_2 {
   color: var(--pink);
   font-size: 3rem;
   font-family: "Bungee", sans-serif;
-  margin-left: 1vw;
+  margin-left: 2vw;
+  margin-top: 12vw;
 }
+
 .tekst_3 {
   color: var(--red);
   font-size: 3rem;
   font-family: "Bungee", sans-serif;
-  margin-left: 5vw;
-}
-
-.tekst_3 {
-  color: var(--red);
-  font-size: 2.2rem;
-  font-family: "Bungee", sans-serif;
-  margin-left: 1vw;
+  margin-left: 4vw;
+  margin-top: 10vw;
 }
 
 .tekst_4 {
   color: var(--yellow);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Bungee", sans-serif;
-  margin-left: 5vw;
+  margin-left: 4vw;
+  margin-top: 12vw;
 }
 
 #videoBG {
@@ -214,7 +212,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
 @media (min-width: 1000px) {
   .row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 30px;
   }
