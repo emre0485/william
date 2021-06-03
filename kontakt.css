@@ -6,8 +6,9 @@ textarea,
 select,
 button {
   display: block;
-  font-family: "Oswald", light;
+  font-family: "Oswald", sans-serif;
   font-size: 1.3vw;
+  font-weight: 300;
 }
 
 form {
