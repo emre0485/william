@@ -1,10 +1,11 @@
+/*****KNAP STYLING*****/
 .tak_knap {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   display: inline-block;
   text-decoration: none;
-  color: var(--white);
-  border: 3px solid var(--white);
+  color: var(--black);
+  border: 3px solid var(--black);
   font-size: 20px;
   background: transparent;
   position: relative;
@@ -13,8 +14,14 @@
 }
 
 .tak_knap:hover {
-  border: 1px solid var(--black);
-  background-color: var(--black);
+  border: 1px solid var(--darkblue);
+  background-color: var(--darkblue);
   transition: 1s;
-  color: var(--black);
+  color: var(--white);
+}
+
+/*****OVERSKRIFT*****/
+
+#section_one h1 {
+  color: var(--darkblue);
 }
