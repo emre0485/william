@@ -182,24 +182,17 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   text-align: right;
 }
 
-
 @media (max-width: 700px) {
-
-
   .footer img {
     padding-bottom: 1px;
     max-width: 8%;
     text-align: right;
   }
 
-
-nav img {
-  padding-top: 12px;
-  width: 10vw;
+  nav img {
+    padding-top: 12px;
+    width: 10vw;
+  }
 }
 
-}
-
-/* --------------------------------HOVER PÅ IMG------------------------------------- */
-
-
+/* --------------------------------LOGIN------------------------------------- */
