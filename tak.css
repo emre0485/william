@@ -11,6 +11,7 @@
   position: relative;
   cursor: pointer;
   padding: 12px 5vw;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,14 +24,6 @@
   background-color: var(--darkblue);
   transition: 1s;
   color: var(--white);
-}
-
-#section_two .tak_knap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 /*****OVERSKRIFT*****/
