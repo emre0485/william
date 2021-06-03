@@ -143,7 +143,7 @@ FOR AT FÅ IKONER IND, KAN MAN SÆTTE EN CDN TEKST IND FRA FONT AWESOME MED IKON
   }
 
   .nav_link {
-    position: absolute;
+    position: fixed;
     background: var(--white);
     height: 100vh;
     width: 200px;
