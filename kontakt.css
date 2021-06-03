@@ -84,19 +84,3 @@ form-felt {
 #section_two {
   margin: 5rem auto;
 }
-
-/*
-#section_two {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem;
-}
-
-#section_two .img_col {
-  grid-column: 2/3;
-}
-
-#section_two .form_col {
-  grid-column: 3/4;
-}
-*/
