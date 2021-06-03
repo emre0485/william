@@ -9,10 +9,29 @@
   color: var(--pink);
 }
 
-.container {
-  width: 60%;
-  margin: 2rem auto;
+
+
+
+/* Styler billederne  */
+
+@media (max-width: 700px ) {
+
+.gallery_img {
+  width: 100%;
+  height: auto;
+
 }
+}
+
+
+
+
+@media (min-width: 700px) {
+
+  .container {
+    width: 60%;
+    margin: 2rem auto;
+  }
 
 /* Grid i gallery */
 .gallery {
@@ -21,7 +40,6 @@
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 1.5rem;
 }
-/* Styler billederne  */
 
 .gallery_img {
   width: 100%;
@@ -122,6 +140,7 @@
   grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 9;
+}
 }
 
 img:hover {
